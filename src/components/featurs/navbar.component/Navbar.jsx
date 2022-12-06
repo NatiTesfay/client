@@ -4,7 +4,6 @@ import './navbar.css'
 const Navbar = () => {
   return (
     <>
-    <div className="Path-58"></div>
     </>
   )
 }
