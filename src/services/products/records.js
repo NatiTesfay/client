@@ -1,6 +1,7 @@
-const BASIC_API = "http://localhost:8080/products/"
+const BASIC_API = "";
 
-async function getProducts() {
+
+async function getRecords() {
   try {
     return await fetch(BASIC_API).then((result) => result.json());
   } catch (error) {
@@ -8,37 +9,18 @@ async function getProducts() {
   } finally {
   }
 }
-getProducts()
+getRecords()
 
-async function getProductById() {
+async function getRecordsById() {
   try {
 
   } catch (error) {
 
   }
 }
-getProductById()
+getRecordsById()
 
-async function postProduct() {
-  try {
-
-  } catch (error) {
-
-  }
-
-}
-postProduct()
-
-async function addProduct() {
-  try {
-
-  } catch (error) {
-
-  }
-}
-addProduct()
-
-async function deleteProduct() {
+async function postRecords() {
   try {
 
   } catch (error) {
@@ -46,4 +28,23 @@ async function deleteProduct() {
   }
 
 }
-deleteProduct()
+postRecords()
+
+async function addRecords() {
+  try {
+
+  } catch (error) {
+
+  }
+}
+addRecords()
+
+async function deleteRecord() {
+  try {
+
+  } catch (error) {
+
+  }
+
+}
+deleteRecord()

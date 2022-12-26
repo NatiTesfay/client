@@ -1,14 +1,14 @@
-const BASIC_API = "http://localhost:8080/order/";
+const BASIC_API = ""
 
-
-async function getOrders() {
+async function getOrder() {
   try {
     return await fetch(BASIC_API).then((result) => result.json());
   } catch (error) {
     alert("error");
+  } finally {
   }
 }
-getOrders()
+getOrder()
 
 async function getOrderById() {
   try {
@@ -19,7 +19,7 @@ async function getOrderById() {
 }
 getOrderById()
 
-async function postOrder() {
+async function postOrders() {
   try {
 
   } catch (error) {
@@ -27,18 +27,18 @@ async function postOrder() {
   }
 
 }
-postOrder()
+postOrders()
 
-async function addOrder() {
+async function addOrders() {
   try {
 
   } catch (error) {
 
   }
 }
-addOrder()
+addOrders()
 
-async function deleteOrder() {
+async function deleteOrders() {
   try {
 
   } catch (error) {
@@ -46,4 +46,4 @@ async function deleteOrder() {
   }
 
 }
-deleteOrder()
+deleteOrders()
